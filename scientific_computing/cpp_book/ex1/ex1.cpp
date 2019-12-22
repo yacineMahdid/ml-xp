@@ -20,7 +20,7 @@ int current_time(){
     return int(ms.count());
 }
 
-int age_logger () {
+void age_logger () {
     // Variable initialization
     int age;
     std::ofstream age_db;
@@ -113,7 +113,7 @@ int memory_leak(){
 // need to read the matrix market file using fstream and print the number of rows
 // and columns, and the number of non-zeroes on the screen
 // there is an example matrix_market file in .txt format taken from the book
-int main(){
+int matrix_market(){
     // Variable initialization
     std::string line;
     std::string delimiter = "\t";
@@ -147,4 +147,8 @@ int main(){
     else {
         std::cout << "Unable to open file";
     } 
+}
+
+int main(){
+    matrix_market();
 }
